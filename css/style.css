@@ -84,7 +84,58 @@ header a:hover{
     font-weight: bold;
 }
 
+/*  samples back ground */
+#showback{
+    min-height: 500px;
+    background: url('../img/second.png') no-repeat 0 -200px;
+
+    
+    text-align: center;
+    color: #ffffff;
+   
+}
+
+#showbacks{
+    min-height: 500px;
+    background: url('../img/second.png') no-repeat 0 -200px;
+
+    
+    text-align: center;
+    color: #ffffff;
+   
+}
+#showbacks h1{
+    margin-top: 10px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showback h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showback p{
+    font-size: 20px;
+
+}
+
+/*  list  */
+
+#list  {
+    list-style-image: url('../img/second.png') ;
+}
+
+
 /* Showcase */
+#showcases{
+    min-height: 500px;
+    background: url('../img/make.png') no-repeat 0 -200px;
+    text-align: center;
+    color: #ffffff;
+}
+
 
 #showcase{
     min-height: 500px;
@@ -129,6 +180,24 @@ header a:hover{
     height: 25px;
     width: 250px;
 
+}
+
+/*  xbox  */
+#xboxes{
+    margin-top: 10px auto;
+
+}
+
+#xboxes .xbox{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 5px;
+    
+}
+
+#xboxes .xbox img{
+    width: 200px;
 }
 
 /* boxes  */
@@ -198,6 +267,7 @@ footer{
      #newsletter h1,
      #newsletter form,
      #boxes .box,
+     #xboxes .xbox,
      article#main_col,
      aside#sidebar{
         float: none;
@@ -211,6 +281,9 @@ footer{
     }
 
     #showcase h1{
+        margin-top: 40px;
+    }
+    #showbacks h1{
         margin-top: 40px;
     }
 
