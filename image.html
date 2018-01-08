@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional 3D Printing">
+    <meta name="keywords" content="3d printing, mauritius">
+    <meta name="author" content="ASD">
+    <title>ASD 3D printing | Images</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .row>.column {
+        padding: 0 10px;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .column {
+        float: left;
+        width: 25%;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
+    /* The Close Button */
+    
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    .cursor {
+        cursor: pointer
+    }
+    /* Next & previous buttons */
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    img {
+        margin-bottom: -4px;
+    }
+    
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+    
+    .demo {
+        opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    
+    img.hover-shadow {
+        transition: 0.3s
+    }
+    
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <span class="highlight"> AS-Tech </span> 3D Printing </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home </a> </li>
+                    <li><a href="samples.html"> Samples </a> </li>
+                    <li><a href="about.html"> About </a> </li>
+                    <li class="current"><a href="image.html">New Images </a> </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase6">
+        <h2 style="text-align:center">Printed Samples</h2>
+
+        <div class="row">
+            <div class="column">
+                <img src="./images/ASD.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/christmas_ornaments.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/fan_grill.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/kali_linux.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+                <img src="./images/kali_linux_2.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/korean_keychain.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/linux.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/minion.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/mix_keychains.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/os_keychains.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/os_keychains_2.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/phone_laptop_holder.png" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/phone_stand.png" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/phone_stand_2.png" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/phone_stand_3.png" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/sd_card_holder.png" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./images/storm_trooper.png" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 17</div>
+                    <img src="./images/ASD.png" style="width:100%">
+                </div>
+
+                <div class="mySlides ">
+                    <div class="numbertext ">2 / 17</div>
+                    <img src="./images/christmas_ornaments.png " style="width:100% ">
+                </div>
+
+                <div class="mySlides ">
+                    <div class="numbertext ">3 / 17</div>
+                    <img src="./images/fan_grill.png " style="width:100% ">
+                </div>
+
+                <div class="mySlides ">
+                    <div class="numbertext ">4 / 17</div>
+                    <img src="./images/kali_linux.png " style="width:100% ">
+                </div>
+
+                <div class="mySlides ">
+                    <div class="numbertext ">5 / 17</div>
+                    <img src="./images/kali_linux_2.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">6 / 17</div>
+                    <img src="./images/korean_keychain.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">7 / 17</div>
+                    <img src="./images/linux.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">8 / 17</div>
+                    <img src="./images/minion.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">9 / 17</div>
+                    <img src="./images/mix_keychains.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">10 / 17</div>
+                    <img src="./images/os_keychains.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">11 / 17</div>
+                    <img src="./images/os_keychains_2.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">12 / 17</div>
+                    <img src="./images/phone_laptop_holder.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">13 / 17</div>
+                    <img src="./images/phone_stand.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">14 / 17</div>
+                    <img src="./images/phone_stand_2.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">15 / 17</div>
+                    <img src="./images/phone_stand_3.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">16 / 17</div>
+                    <img src="./images/sd_card_holder.png " style="width:100% ">
+                </div>
+                <div class="mySlides ">
+                    <div class="numbertext ">17 / 17</div>
+                    <img src="./images/storm_trooper.png " style="width:100% ">
+                </div>
+
+                <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+                <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+                <div class="caption-container ">
+                    <p id="caption "></p>
+                </div>
+
+
+                <div class="column ">
+                    <img class="demo cursor " src="./images/ASD.png " style="width:100% " onclick="currentSlide(1) " alt="Logo on backcover ">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/christmas_ornaments.png " style="width:100% " onclick="currentSlide(2) " alt="Christmas Ornaments ">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/fan_grill.png " style="width:100% " onclick="currentSlide(3) " alt="PC Fan Grill">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/kali_linux.png " style="width:100% " onclick="currentSlide(4) " alt="Kali Linux Logo">
+                </div>
+
+                <div class="column ">
+                    <img class="demo cursor " src="./images/kali_linux_2.png " style="width:100% " onclick="currentSlide(5) " alt="Kali Linux Logo">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/korean_keychain.png " style="width:100% " onclick="currentSlide(6) " alt="korean Keychain">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/linux.png " style="width:100% " onclick="currentSlide(7) " alt="Linux logo keychain">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/minion.png " style="width:100% " onclick="currentSlide(8) " alt="Minion keychain">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/mix_keychains.png " style="width:100% " onclick="currentSlide(9) " alt="Different custom keychains">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/os_keychains.png " style="width:100% " onclick="currentSlide(10) " alt="OS keychains">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/os_keychains_2.png " style="width:100% " onclick="currentSlide(11) " alt="More OS keycahins">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/phone_laptop_holder.png " style="width:100% " onclick="currentSlide(12) " alt="Phone Laptop Holder">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/phone_stand.png " style="width:100% " onclick="currentSlide(13) " alt="Phone Stand ">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/phone_stand_2.png " style="width:100% " onclick="currentSlide(14) " alt="Phone Stand ">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/phone_stand_3.png " style="width:100% " onclick="currentSlide(15) " alt="Phone Stand">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/sd_card_holder.png " style="width:100% " onclick="currentSlide(16) " alt="SD Card Holder">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./images/storm_trooper.png " style="width:100% " onclick="currentSlide(17) " alt="Storm Trooper">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block ";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none ";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("demo ");
+            var captionText = document.getElementById("caption ");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <footer>
+        <p> Note: If you want to view the image properly, please right click on it and open in new tap. </p>
+        <p> AS-Tech 3D printing, Copyright &copy; 2017 </p>
+    </footer>
+</body>
+
+</html>
